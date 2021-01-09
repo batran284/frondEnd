@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Jumping Ninja</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div id="start">
+        <div id="header">
+            <h1 id="h1">Jump Ninja<br> Bunny</h1>
+        </div>
+        <div id="play">Play</div>
+    </div>
+    <div id="gameover">
+        <h1>GAME OVER</h1>
+        <div class="scores">
+            <h4 id="score">score</h4>
+            <h4 id="topScore">best</h4>
+        </div>
+        <i class="fas fa-undo-alt" id="playAgainBtn"></i>
+    </div>
+
+    <audio id="dropWater" style="display: none" controls>
+		<source src="audio/Dropping.mp3" type="audio/wav"> 
+	</audio>
+    <audio id="jumpSound" style="display: none" controls>
+		<source src="audio/drip.mp3" type="audio/wav"> 
+	</audio>
+
+    <script src="//cdn.jsdelivr.net/phaser/2.6.2/phaser.js"></script>
+    <script src="script/menu.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
